@@ -6,22 +6,20 @@ public class test6 {
 	// 백준 2884
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+
 		int hour = sc.nextInt();
-		int min = sc.nextInt() - 45;
-		
-		int h = hour + (min / 60);
-		
-		if(h >= 24) {
-			h = 0;
-		} else if(min < 0) {
-			h--;
-			min = 60 % min;
-		} else if (min > 60) {
-			h++;
+		int min = sc.nextInt();
+
+		if (min < 45) {
+			hour--;
+			min = 60 - (45 - min);
+			if (hour < 0) {
+				hour = 23;
+			}
+			System.out.printf("%d %d", hour, min);
+		} else {
+
+			System.out.printf("%d %d", hour, min - 45);
 		}
-		
-		System.out.printf("%d %d", h, min-45);
-		
 	}
 }
