@@ -20,6 +20,7 @@ public class C03CharAt {
 
 		System.out.println(str1.charAt(5));
 		System.out.println(str1.charAt(str1.length() - 1));
-		
+
+	
 	}
 }
