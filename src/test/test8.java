@@ -28,8 +28,7 @@ public class test8 {
 	        		answer = 2;
 	        	}
 	        }
-	        
-	        System.out.println(answer);
 	    }
+	   
 }
 
