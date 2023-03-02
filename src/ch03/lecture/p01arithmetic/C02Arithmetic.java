@@ -11,6 +11,6 @@ public class C02Arithmetic {
 		double b = sc.nextDouble();
 
 		System.out.println(a / b);
-
+		Integer.parseInt(null);
 	}
 }

@@ -1,13 +1,15 @@
 package test.programmers;
 
-class Solution2 {
+class Solution3 {
     public int[] solution(int n, int[] numlist) {
-        int[] answer = new int[n];
+        int[] answer = {};
+        int j = 0;
+        
         for(int i = 0; i < numlist.length; i++) {
+            answer = new int[j];
             if(numlist[i]%n == 0) {
-                for(int j = 0; j < i; j++) {
-                    answer[j] = numlist[i];
-                }
+                answer[j] = numlist[i];
+                j++;
             }
         }
         return answer;
