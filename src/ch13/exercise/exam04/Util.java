@@ -4,7 +4,7 @@ public class Util<K, V> {
 	private K key;
 	private V value;
 	
-	Pair<K, V> p = new Pair<K, V>(key, value);
+	Pair<K, V> p = new Pair<>(key, value);
 	public Util(K key) {
 		this.key = key;
 	}
