@@ -12,7 +12,11 @@ public class Example {
 	}
 	
 	public static void main(String[] args) {
+		
+		// 스태틱 메소드 참조
 		int max1 = maxOrMin((x, y) -> Math.max(x, y));
+		int max4 = maxOrMin(Math::max);
+		
 		int max2 = maxOrMin((x, y) -> ((x > y) ? x : y));
 		int max3 = maxOrMin((x, y) -> {
 			if(x > y) {
@@ -23,7 +27,9 @@ public class Example {
 		});
 		System.out.println("최대값: " + max1);
 		
+		// 스태틱 메소드 참조
 		int min = maxOrMin((x, y) -> Math.min(x, y));
+		int min2 = maxOrMin(Math::min);
 		System.out.println("최소값: " + min);		
 	}
 }
