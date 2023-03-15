@@ -6,7 +6,7 @@ public class C03WildCard {
 		MyClass03<? super Number> o2 = new MyClass03<Object>();
 //		o1.item = new Number(); // 됨 (추상 클래스여서 인스턴스화 못하는거임)
 		o1.item = new Integer(0); // ok
-		o1.item = new Object();
+//		o1.item = new Object();
 		
 		MyClass03<? extends Number> o3 = new MyClass03<Number>();
 		MyClass03<? extends Number> o4 = new MyClass03<Integer>();

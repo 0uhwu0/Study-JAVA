@@ -10,7 +10,7 @@ public class C05WildCard {
 		addItem(o2); // super 지우면 Number만 됨 -> super로 참조값 얻는거임
 		
 		MyClass05<Integer> o3 = new MyClass05<Integer>();
-		addItem(o3); // 참조값이 Integer로 Number보다 하위 클래스이기에 참고값 안됨.
+//		addItem(o3); // 참조값이 Integer로 Number보다 하위 클래스이기에 참고값 안됨.
 		
 	}
 	

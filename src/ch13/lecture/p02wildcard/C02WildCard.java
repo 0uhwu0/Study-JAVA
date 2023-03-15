@@ -10,7 +10,7 @@ public class C02WildCard {
 		
 		// 값이 들어올 때(in) extends
 		MyClass02<? extends String> o2 = new MyClass02<String>();
-		o2.item = new String(); // String 또는 그 하위타입을 대입 불가능
+//		o2.item = new String(); // String 또는 그 하위타입을 대입 불가능
 		String s2 = o2.item; // String에 할당 가능
 		Object s3 = o2.item;
 		
