@@ -14,7 +14,7 @@ public class S120846 {
 			if (cnt > 2) {
 				answer++;
 			}
-		}
+		} asd
 		System.out.println(answer);
 	}
 }
