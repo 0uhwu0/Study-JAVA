@@ -8,22 +8,16 @@ public class S120888 {
 		String my_string = "people";
 		String answer = "";
 		char[] a = new char[my_string.length()];
-		List<char[]> list = new ArrayList<>();
 		
 		for(int i = 0; i < my_string.length(); i++) {
-			a[i] = my_string.charAt(i);
-		}
-		
-		list.add(a);
-		for(int i = 0; i < list.size(); i++) {
-			for(int j = i + 1; j < list.size(); j++) {
-				if(list.get(i) == list.get(j)) {
-					list.remove(j);
+			for(int j = i+1; j < my_string.length(); j++) {
+				if(a[i] != a[j]) {
+					a[i] = my_string.charAt(i);
 				}
-			}
-			answer += list.get(i);
+			}asdasd
+			answer += a[i];
 		}
-		System.out.println(list.toString());asdasdjasoipdjasoidj
+		System.out.println(Arrays.toString(a));
 		System.out.println(answer);
 	}
 }
