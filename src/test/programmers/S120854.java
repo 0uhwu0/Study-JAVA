@@ -1,6 +1,6 @@
-package test;
+package test.programmers;
 
-public class test7 {
+public class S120854 {
 	// 프로그래머스 120854
 	public static void main(String[] args) {
 		String[] list = { "We", "are", "the", "world!" };

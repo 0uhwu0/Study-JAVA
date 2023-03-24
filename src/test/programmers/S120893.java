@@ -1,6 +1,6 @@
-package test;
+package test.programmers;
 
-public class test11 {
+public class S120893 {
 	// 프로그래머스 120893
 	public static void main(String[] args) {
 		
