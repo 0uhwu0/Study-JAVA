@@ -7,28 +7,19 @@ public class S120913 {
 		String my_str = "abc1Addfggg4556b";
 		int n = 6;
 		String[] answer;
-		String str2 = "";
+		int a = 0;
+		String new_str = "";
 		if (my_str.length() % n == 0) {
-			answer = new String[my_str.length()];
+			answer = new String[my_str.length()/n];
 		} else {
-			answer = new String[my_str.length() + 1];
-		}
-
-		if (my_str.length() % n == 0) {
-			for (int i = 0; i < my_str.length(); i++) {
-				str2 += my_str.charAt(i);asdioj23q0u
-				answer[i] = str2;
-				str2 = "";
-			}
-		} else {
-			for (int i = n-1; i < my_str.length()/n + 1; i+=n) {
-				str2 += my_str.charAt(i);
-				answer[i] = str2;
-				str2 = "";
-			}
+			answer = new String[my_str.length()/n + 1];
 		}
 		
-		
+		for (int i = n; i <= my_str.length(); i+=n) {asd
+			answer[a] = my_str.substring(0, i);
+			System.out.println(Arrays.toString(answer));
+			a++;
+		}
 		System.out.println(Arrays.toString(answer));
 	}
 }
